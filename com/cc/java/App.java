@@ -4,10 +4,18 @@ public class App {
     
     public static void main(String[] args) {
      
-        
+        Queen queen = new Queen();
+        Worker worker = new Worker();
+        Drone drone = new Drone();
 
-                
+        output(queen.doYourJob());
+        output(queen.fly());
 
+        output(queen.doYourJob());
+        output(queen.fly());
+
+        output(queen.doYourJob());
+        output(queen.fly());
 
     }
 

@@ -23,12 +23,27 @@ public class App {
 
     }
 
+
+        // pollObj(Worker obj)
+        // pollObj(Drone obj)
+
+
    private static void pollObj(Queen obj){
     output(obj.doYourJob());
     output(obj.fly());
     output("---------------------------");
    }
    
+   private static void pollObj(Drone obj){
+    output(obj.doYourJob());
+    output(obj.fly());
+    output("---------------------------");
+   }
+   private static void pollObj(Worker obj){
+    output(obj.doYourJob());
+    output(obj.fly());
+    output("---------------------------");
+   }
     private static void output(String outputStr) {
         System.out.println(outputStr);
     }

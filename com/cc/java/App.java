@@ -8,6 +8,10 @@ public class App {
         Worker worker = new Worker();
         Drone drone = new Drone();
 
+        pollObj(queen);
+        pollObj(worker);
+        pollObj(drone);
+
         output(queen.doYourJob());
         output(queen.fly());
 
@@ -19,7 +23,11 @@ public class App {
 
     }
 
-   
+   private static void pollObj(Queen obj){
+    output(obj.doYourJob());
+    output(obj.fly());
+    output("---------------------------");
+   }
    
     private static void output(String outputStr) {
         System.out.println(outputStr);
